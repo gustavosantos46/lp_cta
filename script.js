@@ -19,6 +19,12 @@ function updateCountdown() {
   countdownEl.textContent = `${minutes}:${seconds.toString().padStart(2, "0")}`;
 }
 
+const testeEvento = document.getElementById("cta");
+testeEvento.addEventListener("click", function (event) {
+  event.preventDefault();
+  alert("Obrigado por clicar no botão! Em breve você será redirecionado.");
+});
+
 // CARROSSEL
 const carousel = document.querySelector(".carousel");
 const track = document.querySelector(".carousel-track");
