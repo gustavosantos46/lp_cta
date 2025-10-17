@@ -36,7 +36,6 @@ const clonesCount = 3;
 let currentIndex = clonesCount;
 let isMoving = false;
 
-
 function setupClones() {
   for (let i = 0; i < clonesCount; i++) {
     const clone = slides[slideCount - 1 - i].cloneNode(true);
